@@ -1,8 +1,0 @@
-org/itnaf/idverse/client/IdVerseApiClient.class
-org/itnaf/idverse/client/model/OAuthTokenResponse.class
-org/itnaf/idverse/client/model/OAuthTokenResponse$OAuthTokenResponseBuilder.class
-org/itnaf/idverse/client/model/VerificationRequest.class
-org/itnaf/idverse/client/model/WebhookPayload.class
-org/itnaf/idverse/client/service/OAuthTokenService.class
-org/itnaf/idverse/client/service/JwtService.class
-org/itnaf/idverse/client/model/WebhookPayload$WebhookPayloadBuilder.class
