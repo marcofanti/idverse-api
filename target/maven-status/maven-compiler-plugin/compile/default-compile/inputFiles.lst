@@ -1,0 +1,6 @@
+/Users/mfanti/Documents/BehavioSec/IDVerse/idverse-api/src/main/java/org/itnaf/idverse/client/IdVerseApiClient.java
+/Users/mfanti/Documents/BehavioSec/IDVerse/idverse-api/src/main/java/org/itnaf/idverse/client/service/OAuthTokenService.java
+/Users/mfanti/Documents/BehavioSec/IDVerse/idverse-api/src/main/java/org/itnaf/idverse/client/service/JwtService.java
+/Users/mfanti/Documents/BehavioSec/IDVerse/idverse-api/src/main/java/org/itnaf/idverse/client/model/VerificationRequest.java
+/Users/mfanti/Documents/BehavioSec/IDVerse/idverse-api/src/main/java/org/itnaf/idverse/client/model/WebhookPayload.java
+/Users/mfanti/Documents/BehavioSec/IDVerse/idverse-api/src/main/java/org/itnaf/idverse/client/model/OAuthTokenResponse.java
