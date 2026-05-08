@@ -1,0 +1,26 @@
+meta {
+  name: Send Verification
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{BASE_URL}}/api/verify
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "phoneCode": "+1",
+    "phoneNumber": "5551234567",
+    "referenceId": "test-ref-001",
+    "transactionId": "txn-test-001",
+    "name": "John Doe",
+    "suppliedFirstName": "John"
+  }
+}

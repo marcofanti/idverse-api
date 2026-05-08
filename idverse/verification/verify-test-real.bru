@@ -1,0 +1,30 @@
+meta {
+  name: Verify Test (Real Call)
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{BASE_URL}}/api/verify/test
+  body: json
+  auth: none
+}
+
+params:query {
+  dryRun: false
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "phoneCode": "+1",
+    "phoneNumber": "5551234567",
+    "referenceId": "test-ref-001",
+    "transactionId": "txn-test-001",
+    "name": "John Doe",
+    "suppliedFirstName": "John"
+  }
+}

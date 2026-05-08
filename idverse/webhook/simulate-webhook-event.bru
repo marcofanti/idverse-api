@@ -1,0 +1,26 @@
+meta {
+  name: Simulate Webhook (Event)
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{BASE_URL}}/api/webhook
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{WEBHOOK_JWT_TOKEN}}
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "transactionId": "txn-test-001",
+    "event": "pending"
+  }
+}

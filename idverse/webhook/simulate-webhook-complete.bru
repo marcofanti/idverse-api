@@ -1,0 +1,26 @@
+meta {
+  name: Simulate Webhook (Complete)
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{BASE_URL}}/api/webhook
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{WEBHOOK_JWT_TOKEN}}
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "transactionId": "txn-test-001",
+    "event": "completedPass"
+  }
+}

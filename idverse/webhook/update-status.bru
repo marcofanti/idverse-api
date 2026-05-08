@@ -1,0 +1,22 @@
+meta {
+  name: Update Status (No Auth)
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{BASE_URL}}/api/updateStatus
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "transactionId": "txn-test-001",
+    "event": "completedPass"
+  }
+}

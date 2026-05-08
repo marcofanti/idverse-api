@@ -1,0 +1,17 @@
+meta {
+  name: Get OAuth Token (Upstream)
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{IDVERSE_OAUTH_URL}}
+  body: form-urlencoded
+  auth: none
+}
+
+body:form-urlencoded {
+  grant_type: client_credentials
+  client_id: {{IDVERSE_CLIENT_ID}}
+  client_secret: {{IDVERSE_CLIENT_SECRET}}
+}

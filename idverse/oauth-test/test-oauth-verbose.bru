@@ -1,0 +1,15 @@
+meta {
+  name: Test OAuth (Verbose)
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{BASE_URL}}/test/oauth
+  body: none
+  auth: none
+}
+
+params:query {
+  verbose: debug
+}

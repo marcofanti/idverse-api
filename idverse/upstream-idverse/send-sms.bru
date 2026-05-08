@@ -1,0 +1,37 @@
+meta {
+  name: Send SMS Verification (Upstream)
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{IDVERSE_API_URL}}
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{IDVERSE_ACCESS_TOKEN}}
+}
+
+headers {
+  Content-Type: application/json
+  accept: application/json
+}
+
+body:json {
+  {
+    "phoneCode": "+1",
+    "phoneNumber": "5551234567",
+    "referenceId": "test-ref-001",
+    "transactionId": "txn-test-001",
+    "name": "John Doe",
+    "suppliedFirstName": "John",
+    "notifyUrlComplete": "{{NOTIFY_URL_COMPLETE}}",
+    "notifyUrlCompleteAuthKey": "Bearer {{WEBHOOK_JWT_TOKEN}}",
+    "notifyUrlCompleteAuthHeaderName": "Authorization",
+    "notifyUrlEvent": "{{NOTIFY_URL_EVENT}}",
+    "notifyUrlEventAuthKey": "Bearer {{WEBHOOK_JWT_TOKEN}}",
+    "notifyUrlEventAuthHeaderName": "Authorization"
+  }
+}
