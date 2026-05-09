@@ -1,2 +1,4 @@
+ipykernel>=6.29.0
+jupyterlab>=4.2.0
 requests>=2.32.0
 python-dotenv>=1.0.0
